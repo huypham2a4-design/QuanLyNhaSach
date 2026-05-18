@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QuanLyNhaSach.GiaoDien
+{
+    public partial class frmQuyDinh : Form
+    {
+        public frmQuyDinh()
+        {
+            InitializeComponent();
+            this.CenterToScreen();
+        }
+      }
+}

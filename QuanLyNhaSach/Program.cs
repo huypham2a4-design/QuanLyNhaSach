@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QuanLyNhaSach
+{
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            AppDomain.CurrentDomain.AssemblyResolve += (s, e) => null;
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new GiaoDien.DangNhap());
+            //Application.Run(new GiaoDien.frmKhachHang());
+            //Application.Run(new GiaoDien.frmNhanVien());
+            //Application.Run(new GiaoDien.frmSach());
+        }
+    }
+}
